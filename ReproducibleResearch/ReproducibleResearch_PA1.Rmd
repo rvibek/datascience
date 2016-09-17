@@ -1,0 +1,16 @@
+# Reproducible Research
+##Peer Assessment 1
+
+---
+
+```{r setoptions, echo=FALSE, results="hide"}
+library(knitr)
+opts_chunk$set(echo=TRUE, results="asis")
+```
+
+## Loading and preprocessing the data
+
+Load the data
+```{r}
+data <- read.csv("activity.csv")
+```
