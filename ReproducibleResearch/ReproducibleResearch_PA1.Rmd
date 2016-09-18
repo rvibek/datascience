@@ -2,15 +2,21 @@
 ##Peer Assessment 1
 
 ---
+## Initialise
 
 ```{r setoptions, echo=FALSE, results="hide"}
 library(knitr)
 opts_chunk$set(echo=TRUE, results="asis")
 ```
 
-## Loading and preprocessing the data
+## Load and preproces the data
 
 Load the data
 ```{r}
+if(!file.exists("activity.csv")){
+        system("unzip activity.zip")
+        }
+
 data <- read.csv("activity.csv")
 ```
+
